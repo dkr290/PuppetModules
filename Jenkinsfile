@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'find . -name *.pp -exec /usr/local/bin/puppet parser validate {} +;'
+                sh 'find . -name *.pp -exec /opt/puppetlabs/bin/puppet parser validate {} +;'
             }
         }
     }
